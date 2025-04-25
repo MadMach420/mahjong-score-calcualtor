@@ -16,14 +16,13 @@ class MyApp(App):
         # layout.add_widget(self.img)
         return text
 
-    def take_picture(self, instance):
-        camera.take_picture(filename='photo.jpg', on_complete=self.show_photo)
+    # def take_picture(self, instance):
+    #     camera.take_picture(filename='photo.jpg', on_complete=self.show_photo)
+    #
+    # def show_photo(self, path):
+    #     # TODO: run model here
+    #     # print(f"Photo taken {path}")
+    #     pass
 
-    def show_photo(self, path):
-        # TODO: run model here
-        # print(f"Photo taken {path}")
-        pass
 
-
-if __name__ == '__main__':
-    MyApp().run()
+MyApp().run()
