@@ -4,6 +4,6 @@
  *.pyc
  __pycache__
  
- 
+ /training/src/temp
  /app/.buildozer/
  
