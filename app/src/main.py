@@ -7,21 +7,22 @@ from plyer import camera
 
 class MyApp(App):
     def build(self):
-        layout = BoxLayout(orientation='vertical')
-        # text = Label(text="Hello World")
+        # layout = BoxLayout(orientation='vertical')
+        text = Label(text="Hello World")
         # btn = Button(text="Take Photo", on_press=self.take_picture)
         # layout.add_widget(text)
         # layout.add_widget(btn)
-        self.img = Image()
-        layout.add_widget(self.img)
-        return layout
+        # self.img = Image()
+        # layout.add_widget(self.img)
+        return text
 
     def take_picture(self, instance):
         camera.take_picture(filename='photo.jpg', on_complete=self.show_photo)
 
     def show_photo(self, path):
         # TODO: run model here
-        print(f"Photo taken {path}")
+        # print(f"Photo taken {path}")
+        pass
 
 
 if __name__ == '__main__':
