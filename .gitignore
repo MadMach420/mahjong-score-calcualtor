@@ -3,5 +3,5 @@
 .venv
  *.pyc
  
- /app/.buildozer/
+ .buildozer/
  
